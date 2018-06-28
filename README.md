@@ -1,20 +1,9 @@
-Kotlin Hello World Demo
-=======================
+Kotlin Run Applications from Gradle Demo
+========================================
 
-Run Kotlin main class from gradle.
-
-```
-./gradlew run -Pconfig=a.json
-```
-
-You will see "Hello, Kotlin!" from console.
-
-Run tests:
+Run 
 
 ```
-./gradlew test
+./gradlew hello1 -Pmyargs=a,b,c
+./gradlew hello2 -Pmyargs=a,b,c
 ```
-
-You will see test result from console.
-
-

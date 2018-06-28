@@ -1,13 +1,12 @@
 package example
 
-object Hello {
+object Hello2 {
+
     @JvmStatic
     fun main(args: Array<String>) {
-        println(hello("Kotlin"))
+        println("Hello2")
         println("args: ${args.joinToString(",")}")
     }
-
-    fun hello(name: String): String = "Hello, $name!"
 
 }
 

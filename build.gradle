@@ -34,6 +34,24 @@ run {
     }
 }
 
+task hello1(type: JavaExec, dependsOn: classes) {
+    if (project.hasProperty('myargs')) {
+        args(myargs.split(','))
+    }
+    description = "Hello1"
+    main = "example.Hello1"
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+task hello2(type: JavaExec, dependsOn: classes) {
+    if (project.hasProperty('myargs')) {
+        args(myargs.split(','))
+    }
+    description = "Hello2"
+    main = "example.Hello2"
+    classpath = sourceSets.main.runtimeClasspath
+}
+
 task wrapper(type: Wrapper) {
     gradleVersion = "4.6"
 }
