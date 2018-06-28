@@ -1,10 +1,10 @@
 Kotlin Hello World Demo
 =======================
 
-Hello world from kotlin.
+Run Kotlin main class from gradle.
 
 ```
-./gradlew run
+./gradlew run -Pconfig=a.json
 ```
 
 You will see "Hello, Kotlin!" from console.
